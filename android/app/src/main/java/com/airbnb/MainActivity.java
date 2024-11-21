@@ -9,6 +9,8 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
+    // This method returns the name of the main component registered from JavaScript.
+    // It is used to schedule rendering of the component.
     return "airbnb";
   }
   

@@ -9,21 +9,21 @@ import Search from './src/screens/search';
 import OpenBook from './src/containers/openBookScreen';
 import Pdf from './src/screens/pdf';
 import IndividualNotes from './src/containers/individualNotes';
+
+// Create a stack navigator for the app
 const RootStack = createStackNavigator(
   {
-    Home: {screen: OpeningScreen},
-    Profile: {screen: LogIn},
-    Notes: {screen: Notes},
-    Search: {screen: Search},
-    OpenBook: {screen: OpenBook},
-    Pdf: {screen: Pdf},
-    IndividualNotes: {screen: IndividualNotes},
+    // Define the screens in the navigation stack
+    Home: {screen: OpeningScreen}, // The main screen of the app
+    Profile: {screen: LogIn}, // The login screen
+    Notes: {screen: Notes}, // The notes screen
+    Search: {screen: Search}, // The search screen
+    OpenBook: {screen: OpenBook}, // The screen to open a book
+    Pdf: {screen: Pdf}, // The screen to view a PDF
+    IndividualNotes: {screen: IndividualNotes}, // The screen to view individual notes
   },
   {initialRouteName: 'Home', headerMode: 'none'},
 );
-// export default class App extends Component {
-//   render() {
-//     return <RootStack />;
-//   }
-// }
+
+// Create the app container with the navigation stack
 export default createAppContainer(RootStack);

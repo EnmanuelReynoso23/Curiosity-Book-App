@@ -14,7 +14,7 @@ import com.rnfs.RNFSPackage; // <------- add package
 
 public class MainApplication extends Application implements ReactApplication {
 
-
+  // The ReactNativeHost is responsible for managing the lifecycle of the React instance.
   private final ReactNativeHost mReactNativeHost =
       new ReactNativeHost(this) {
         @Override
@@ -60,6 +60,7 @@ public class MainApplication extends Application implements ReactApplication {
    *
    * @param context
    */
+  // The initializeFlipper method sets up Flipper, a debugging tool for React Native.
   private static void initializeFlipper(Context context) {
     if (BuildConfig.DEBUG) {
       try {

@@ -13,6 +13,7 @@
 
 @implementation AppDelegate
 
+// The application:didFinishLaunchingWithOptions method is called when the app has completed its launch process.
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
@@ -30,6 +31,7 @@
   return YES;
 }
 
+// The sourceURLForBridge method returns the URL for the JavaScript bundle to be loaded by the React Native bridge.
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {
 #if DEBUG
